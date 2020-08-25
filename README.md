@@ -1,6 +1,5 @@
-##🌌 Ajax para uso de API's:
-
--Desenvolvido na IDE Visual Studio Code
--Arquivo html com uso se JavaScript e requisição por meio de API's - utilizado na aula de Linguagem de Progrmação 3
-
-💻 Desenvolvido em HTML, JavaScript e uso de API.
+## 🌌 WebPage:
+- Desenvolvido na IDE [Visual Studio Code](https://code.visualstudio.com/)
+- Arquivo html, com JavaScript e uso de API- utilizado na aula de Linguagem de Progrmação 3
+  
+ 💻 Desenvolvido em HTML com uso de JavaScript e API's.
