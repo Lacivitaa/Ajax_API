@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function SearchDuck(){
+            let searchText = document.getElementById("searchText");
+            let preTag = document.getElementById("preTag");
+
+            var apiURL = `https://api.duckduckgo.com/?q=${searchText.value}&format=json&pretty=1`;
+
+            fetch (apiURL,{mode: "no-cors"})
+            .then (function(response){
+                return response.text();
+            })
+            .then (function(text){
+                console.log('Request completo', text);
+                console.log(text);
+                preTag.innerHTML = text;
+            })
+            .catch (function(error){
+                console.log('Request falhou', error);
+            })
+        }
+    </script>
+</head>
+<body>
+    <input type="search" id="searchText" required>
+    <button onclick="SearchDuck()">Pesquisar</button>
+    <hr>
+    <pre id="preTag"></pre>
+</body>
